@@ -5,7 +5,7 @@ module.exports = {
     devtool: 'cheap-module-eval-source-map',
     entry: [
         'webpack-hot-middleware/client',
-        './js/src/index.js'
+        './examples/test1/test1.js'
     ],
     devServer: {
         historyApiFallback: true,

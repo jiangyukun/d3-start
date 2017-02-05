@@ -13,9 +13,15 @@ let svg = d3.select("body").append("svg")
     .attr("width", w)
     .attr("height", h);
 
-svg.selectAll("rect")
+const t = svg.selectAll("rect")
     .data(d3.range(x * y))
-    .enter().append("rect")
+    .enter()
+
+const a = d3.select("body")
+
+console.log(a)
+
+t.append("rect")
     .attr("transform", translate)
     .attr("width", z)
     .attr("height", z)
