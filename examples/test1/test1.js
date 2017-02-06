@@ -22,5 +22,5 @@ svg.call(xAxis)
 d3.selectAll('rect').on('click', (a, index, list) => {
     d3.select(list[index])
         .transition()
-        .attr('height', 100).attr('y', d => 300)
+        .attr('height', 100).attr('y', d => d * 50)
 })
