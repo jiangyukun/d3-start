@@ -1,14 +1,15 @@
 var path = require('path')
 var webpack = require('webpack')
 
+var test = './examples/test/test.js'
 var test1 = './examples/test1/test1.js'
 var pie = './examples/pie/pie.js'
 
 module.exports = {
-    devtool: 'cheap-module-eval-source-map',
+    // devtool: 'cheap-module-eval-source-map',
     entry: [
         'webpack-hot-middleware/client',
-        pie
+      test
     ],
     devServer: {
         historyApiFallback: true,
